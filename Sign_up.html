@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watch Order Form</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<form action="/action_page.php" method="post">
+
+  <h2>Customer Information Form</h2>
+  <br>
+
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+
+  <label>Gender:</label><br>
+  <!-- Use radio buttons so only one option can be selected -->
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+
+  <input type="radio" id="custom" name="gender" value="custom">
+  <label for="custom">Custom</label><br><br>
+
+  <label>Date of Birth:</label><br>
+
+  <select name="day" required>
+    <option value="">Day</option>
+    <!-- Days 1-31 -->
+    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+    <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+    <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+    <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+    <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+    <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+  </select>
+
+  <select name="month" required>
+    <option value="">Month</option>
+    <option>January</option><option>February</option><option>March</option><option>April</option>
+    <option>May</option><option>June</option><option>July</option><option>August</option>
+    <option>September</option><option>October</option><option>November</option><option>December</option>
+  </select>
+
+  <select name="year" required>
+    <option value="">Year</option>
+    <!-- Years 1980–2025 -->
+    <option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option>
+    <option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option>
+    <option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+    <option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+    <option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+    <option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+    <option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option>
+    <option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option>
+    <option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option>
+  </select><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+  <label for="confirm_password">Confirm Password:</label><br>
+  <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password" required><br><br>
+
+  <input type="submit" value="Submit">
+
+  <p>Already have an account? <a href="login.html">Visit the login page</a>.</p>
+
+</form>
+
+</body>
+</html>

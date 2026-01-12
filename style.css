@@ -1,0 +1,151 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1500&q=80')
+              no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Dark Frosted Glass Form */
+form {
+  background-color: rgba(0, 0, 0, 0.35); /* semi-transparent dark glass */
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  padding: 40px 50px;
+  margin-top: 60px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.6);
+  width: 420px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Lift Effect */
+form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.75);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #f8fafc;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #f1f5f9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Inputs, Textarea, and Selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.05); /* ultra-dark transparent */
+  color: #f8fafc;
+  transition: all 0.3s ease;
+  appearance: none; /* modern look for select */
+}
+
+/* Placeholder color */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(248, 250, 252, 0.6);
+}
+
+/* Focus Effects */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.7);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Gender Checkboxes */
+input[type="checkbox"] {
+  margin-right: 6px;
+  accent-color: #60a5fa;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #facc15; /* premium gold accent */
+  color: #0f172a;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(250, 204, 21, 0.4);
+}
+
+input[type="submit"]:hover {
+  background-color: #f59e0b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.6);
+}
+
+/* Login Link */
+p {
+  text-align: center;
+  color: #f1f5f9;
+  margin-top: 20px;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Day/Month/Year Select Dropdowns */
+select {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 18px;
+  appearance: none;
+}
+
+/* Options inside select */
+select option {
+  background-color: #1e293b; /* dark background for options */
+  color: #f8fafc; /* readable text */
+}
+
+
+
+

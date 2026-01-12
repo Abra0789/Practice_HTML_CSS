@@ -1,0 +1,125 @@
+/* === Reset and Base === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+
+/* === Navbar Styling === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #001f4d, #004080);
+  color: rgb(255, 255, 255);
+  padding: 12px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+nav h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav-links-left a,
+.nav-links-right a {
+  color: rgba(255, 255, 255, 0.845);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links-left a:hover,
+.nav-links-right a:hover {
+  color: #00b386;
+  transform: scale(1.1);
+}
+
+#home {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f5faff;
+}
+
+#home h1 em {
+  color: #063882c6;
+}
+
+#home p i {
+  color: #54c72a;
+}
+
+/* === Moving Text (Right to Left) === */
+.moving-text {
+  display: inline-block;
+  font-size: 18px;
+  color: #022252;
+  margin: 20px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moveRightLeft 18s linear infinite;
+}
+
+@keyframes moveRightLeft {
+  100% { transform: translateX(-100%); color: #001f4d; }
+  50% { transform: translateX(0%); color: #00b386; }
+  0% { transform: translateX(100%); color: #001f4d; }
+}
+
+/* === Search Form Styling (Updated Only) === */
+#home form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+#home input[type="search"] {
+  padding: 12px 20px;
+  border-radius: 30px; /* pill shape */
+  border: 2px solid #001f4d;
+  width: 300px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+#home input[type="search"]:focus {
+  border-color: #08ab82;
+  box-shadow: 0 0 10px rgba(189, 238, 226, 0.3);
+}
+
+
+
+/* === Watch Collection (Unchanged) === */
+.watch-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically if needed */
+  gap: 30px;
+  padding: 40px 20px;
+}
+.watch-item {
+  background: rgba(19, 149, 169, 0.159);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(111, 38, 124, 0.293);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
